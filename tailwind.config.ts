@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { nunitoSans } from "~/styles/fonts";
 
 const config = {
   darkMode: ["class"],
@@ -18,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        redaction: ["var(--font-redaction)"],
+        nunitoSans: ["var(--font-nunito)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -77,11 +82,27 @@ const config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
+        "skew-scroll": {
+          "0%": {
+            transform:
+              "rotatex(20deg) rotateZ(-20deg) skewX(20deg) translateZ(0) translateY(0)",
+          },
+          "100%": {
+            transform:
+              "rotatex(20deg) rotateZ(-20deg) skewX(20deg) translateZ(0) translateY(-100%)",
+          },
+        },
+        "logo-cloud": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 4rem))" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "skew-scroll": "skew-scroll 20s linear infinite",
+        "logo-cloud": "logo-cloud 30s linear infinite",
       },
     },
   },
