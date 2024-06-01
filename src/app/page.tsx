@@ -1,12 +1,12 @@
 "use client";
 
+import Footer from "~/components/Footer";
 import { BeamSeparator } from "./_components/BeamSeparator";
 import { Community } from "./_components/Community";
 import { Hero } from "./_components/Hero";
 import { OldWay } from "./_components/OldWay";
 import Pricing from "./_components/Pricing";
 import { Product } from "./_components/Product";
-import SkewedInfiniteScroll from "./_components/SkewedInfiniteScroll";
 import Testimonials from "./_components/Testimonial";
 
 export default function HomePage() {
@@ -21,9 +21,9 @@ export default function HomePage() {
         <Testimonials />
         <Pricing />
         <Community />
-        <SkewedInfiniteScroll />
-        <div className="h-[300rem]"></div>
+        {/* <SkewedInfiniteScroll /> */}
       </div>
+      <Footer />
     </main>
   );
 }
