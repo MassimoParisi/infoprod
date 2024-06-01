@@ -11,7 +11,7 @@ const pricingPlans = [
     description: "Start with essential tools to boost your online presence.",
     monthlyPrice: 2,
     annualPrice: 20,
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://www.paypal.com/paypalme/MassimoPar",
     features: [
       "Nothingness Starter Pack: access to our exclusive collection of absolutely nothing. Perfect for those who want to dip their toes into the void.",
       "Silent Support: our customer support team is always on standby... silently. Experience the peace of mind that comes with no responses.",
@@ -24,7 +24,7 @@ const pricingPlans = [
       "Unlock enhanced features and premium content to supercharge your business.",
     monthlyPrice: 299,
     annualPrice: 199,
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://www.paypal.com/paypalme/MassimoPar",
     features: [
       // "Everything in Basic plan, plus:", TODO: add back
       "Enhanced Emptiness: Dive deeper into the abyss with our upgraded collection of emptiness. Double the nothing, double the fun!",
@@ -38,7 +38,7 @@ const pricingPlans = [
       "Ultimate customization and dedicated support for enterprises.",
     monthlyPrice: 2499,
     annualPrice: 1666,
-    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    link: "https://www.paypal.com/paypalme/MassimoPar",
     features: [
       // "Everything in Professional plan, plus:", TODO: add back
       "Ultimate Void Access: Unlock the ultimate void access with our enterprise plan. Experience nothingness like never before with unlimited access to our premium void collection.",

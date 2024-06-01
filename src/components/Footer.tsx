@@ -52,7 +52,7 @@ const SocialLink = ({
 
 const Footer = () => {
   return (
-    <div className="mt-8 flex w-full flex-col items-center justify-between gap-5 border-t border-white/5 p-4 pt-8 sm:flex-row">
+    <div className="mt-8 flex w-full flex-col items-center justify-between gap-5 border-t border-white/5 p-4 sm:flex-row">
       <p className="text-xs text-gray-100">
         Made with 🤡 by{" "}
         <a href="https://twitter.com/massimopa_dev" className="hover:underline">
