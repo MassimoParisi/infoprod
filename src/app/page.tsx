@@ -2,7 +2,6 @@
 
 import { Community } from "./_components/Community";
 import { Hero } from "./_components/Hero";
-import AnimatedLogoCloud from "./_components/LogoCloud";
 import { OldWay } from "./_components/OldWay";
 import Pricing from "./_components/Pricing";
 import { Product } from "./_components/Product";
@@ -16,7 +15,6 @@ export default function HomePage() {
         <Hero />
         <OldWay />
         <Product />
-        <AnimatedLogoCloud />
         <Testimonials />
         <Pricing />
         <Community />
