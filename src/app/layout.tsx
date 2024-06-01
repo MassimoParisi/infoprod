@@ -15,7 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${nunitoSans.variable} font-nunitoSans`}>
+    <html
+      lang="en"
+      className={`${nunitoSans.variable} font-nunitoSans max-w-screen w-screen overflow-x-hidden`}
+    >
       <body>{children}</body>
     </html>
   );
