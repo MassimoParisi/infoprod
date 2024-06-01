@@ -1,5 +1,6 @@
 "use client";
 
+import { BeamSeparator } from "./_components/BeamSeparator";
 import { Community } from "./_components/Community";
 import { Hero } from "./_components/Hero";
 import { OldWay } from "./_components/OldWay";
@@ -14,7 +15,9 @@ export default function HomePage() {
       <div className="flex flex-col items-center justify-center gap-12 ">
         <Hero />
         <OldWay />
+        <BeamSeparator />
         <Product />
+        <BeamSeparator />
         <Testimonials />
         <Pricing />
         <Community />
