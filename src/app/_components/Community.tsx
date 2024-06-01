@@ -9,7 +9,7 @@ export const Community = () => {
         <AnimatedTooltipPreview />
         <h4 className="w-2/3 text-center text-lg">
           {
-            "We'd love to welcome you to our 1,600+ global community of entrepreneurs radically improving online education while profiting massively."
+            "Connect with fellow enthusiasts and embrace the simplicity of nothingness. Share experiences, enjoy the humor, and be part of a revolution where less is truly more. Sign up today and join the NaaS movement!"
           }
         </h4>
       </div>
