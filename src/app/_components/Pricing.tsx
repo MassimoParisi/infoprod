@@ -53,14 +53,17 @@ const Pricing = () => {
 
   const Heading = () => (
     <div className="relative z-10 my-12 flex flex-col items-center justify-center gap-4">
-      <div className="flex w-full flex-col items-start justify-center space-y-4 md:items-center">
+      <div className="flex w-full flex-col items-center justify-center gap-8 ">
         <FancyTitle>Pricing</FancyTitle>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
-          Pay Less, Get Even Lower.
-        </p>
-        <p className="text-md max-w-xl text-gray-300 md:text-center">
-          Get started with NaaS today and keep your business to the same level.
-        </p>
+        <div className="flex flex-col items-center justify-center gap-4">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
+            Pay Less, Get Even Lower.
+          </p>
+          <p className="text-md max-w-xl text-gray-300 md:text-center">
+            Get started with NaaS today and keep your business to the same
+            level.
+          </p>
+        </div>
       </div>
       <div className="flex items-center justify-center gap-3">
         <button
