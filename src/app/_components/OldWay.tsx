@@ -15,6 +15,11 @@ export const OldWay: React.FC = () => {
           <p className={`animate-dangle`}>en</p>
         </div>
       </div>
+      <p className="max-w-2xl text-center text-sm font-light text-gray-400 md:text-base">
+        The traditional “Software as a Service” model is showing its
+        limitations, burdening users with subscription costs, lack of ownership,
+        and centralized control.
+      </p>
       <AnimatedLogoCloud />
     </div>
   );
