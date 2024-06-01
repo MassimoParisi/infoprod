@@ -9,19 +9,22 @@ export const Hero = () => {
       <Spotlight className="left-0 top-0 md:-top-20 md:left-60" fill="white" />
       <div className="min-w-screen mx-auto flex flex-col items-center justify-center gap-10 px-4 py-16 sm:w-3/4">
         <div className="flex flex-col items-center justify-center gap-4">
-          <h1
+          <div
             className={cn(
-              `font-acorn z-10 flex items-start gap-3 bg-gradient-to-br from-slate-200 to-slate-500 bg-clip-text pb-1 text-2xl tracking-tighter text-transparent sm:text-[2rem]`,
+              `font-acorn z-10 flex items-center gap-3 bg-gradient-to-br from-slate-200 to-slate-500 bg-clip-text pb-1 text-2xl tracking-tighter text-transparent sm:text-[2rem]`,
               //   acorn.variable,
             )}
           >
-            <span className="inline-block bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text align-middle text-xl font-black italic text-transparent sm:text-[2rem]">
-              F
-            </span>{" "}
-            <div className="flex flex-col items-start font-thin leading-none tracking-widest sm:text-[1rem]">
-              <span>FORGIA</span> <span>CORPORATE</span>
+            <span className="text-sm font-thin tracking-wide">offered by</span>
+            <div className="flex items-start gap-3">
+              <span className="inline-block bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text align-middle text-xl font-black italic text-transparent sm:text-[2rem]">
+                F
+              </span>{" "}
+              <div className="flex flex-col items-start font-thin leading-none tracking-widest sm:text-[1rem]">
+                <span>FORGIA</span> <span>CORPORATE</span>
+              </div>
             </div>
-          </h1>
+          </div>
           <h2 className="z-10 text-center text-sm font-bold leading-none tracking-tight sm:text-[2.5rem]">
             <p className="text-nowrap">
               Step into the Void with{" "}
