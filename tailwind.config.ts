@@ -96,6 +96,20 @@ const config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - 4rem))" },
         },
+        dangle: {
+          "0%": {
+            transform: "rotate(26deg) translateY(6px) translateX(10px)",
+          },
+          "50%": {
+            transform: "rotate(32deg) translateY(6px) translateX(10px)",
+          },
+          "75%": {
+            transform: "rotate(34deg) translateY(6px) translateX(10px)",
+          },
+          "100%": {
+            transform: "rotate(26deg) translateY(6px) translateX(10px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -103,6 +117,7 @@ const config = {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         "skew-scroll": "skew-scroll 20s linear infinite",
         "logo-cloud": "logo-cloud 30s linear infinite",
+        dangle: "dangle 1.5s linear infinite",
       },
     },
   },

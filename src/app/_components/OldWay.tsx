@@ -12,7 +12,7 @@ export const OldWay: React.FC = () => {
           className={`${redaction.variable} font-redaction flex gap-0.5 text-5xl text-red-900`}
         >
           <p>brok</p>
-          <p className={`rotate-[20deg]`}>en</p>
+          <p className={`animate-dangle`}>en</p>
         </div>
       </div>
       <AnimatedLogoCloud />
