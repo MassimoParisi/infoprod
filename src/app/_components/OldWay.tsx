@@ -1,7 +1,7 @@
 import { FancyTitle } from "~/components/FancyTitle";
 import { redaction } from "~/styles/fonts";
 
-export const OldWaySection: React.FC = () => {
+export const OldWay: React.FC = () => {
   return (
     <div className="flex flex-col items-center gap-2">
       <FancyTitle>the old way</FancyTitle>
