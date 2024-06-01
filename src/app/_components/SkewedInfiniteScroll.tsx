@@ -8,7 +8,6 @@ const SkewedInfiniteScroll = () => {
     { id: "6", text: "Yet Another Item" },
     { id: "7", text: "Yet Another Item" },
     { id: "8", text: "Yet Another Item" },
-    { id: "8", text: "Yet Another Item" },
   ];
   return (
     <div>

@@ -67,14 +67,14 @@ const AnimatedLogoCloud = () => {
         >
           {Array(5)
             .fill(null)
-            .map((index: number) => (
+            .map((nullVal: number, index: number) => (
               <div
                 key={index}
                 className="animate-logo-cloud flex h-8 shrink-0 flex-row justify-around gap-6"
               >
                 {logos.map((logo, key) => (
                   <Image
-                    key={key}
+                    key={`${index}-${key}`}
                     src={logo.url}
                     width={0}
                     height={0}
