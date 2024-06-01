@@ -36,7 +36,7 @@ export const Hero = () => {
           // width="560"
           // height="315"
           className="aspect-video h-[24rem] self-center"
-          src="https://www.youtube.com/embed/zVf7wNnVbI0?modestbranding=1&showinfo=0&controls=0"
+          src="https://www.youtube.com/embed/fx2Z5ZD_Rbo?modestbranding=1&showinfo=0&controls=0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
