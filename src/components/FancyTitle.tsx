@@ -9,7 +9,7 @@ type FanctyTitleProps = {
 export const FancyTitle: React.FC<FanctyTitleProps> = ({ children }) => {
   return (
     <div
-      className={`flex items-center gap-3 font-thin uppercase tracking-widest ${nunitoSans.variable} font-nunitoSans`}
+      className={`flex items-center gap-3 font-thin uppercase tracking-widest ${nunitoSans.variable} font-nunitoSans text-white`}
     >
       <Image
         src={"/static/divider.svg"}

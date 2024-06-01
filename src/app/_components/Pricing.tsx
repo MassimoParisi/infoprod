@@ -2,23 +2,20 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useState } from "react";
+import { FancyTitle } from "~/components/FancyTitle";
 import { cn } from "~/lib/utils";
 
 const pricingPlans = [
   {
     name: "Basic",
     description: "Start with essential tools to boost your online presence.",
-    monthlyPrice: 69,
-    annualPrice: 49,
-    link: "https://github.com/ansub/syntaxUI",
+    monthlyPrice: 2,
+    annualPrice: 20,
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     features: [
-      "SEO Strategy & Topic Recommendations",
-      "Competitor Analysis to stand out",
-      "Built-in Keyword Research",
-      "Target latest Google trends",
-      "SEO optimized blogs and socials",
-      "Technical SEO analysis and Reports",
-      "Target 100+ regions and languages",
+      "Nothingness Starter Pack: access to our exclusive collection of absolutely nothing. Perfect for those who want to dip their toes into the void.",
+      "Silent Support: our customer support team is always on standby... silently. Experience the peace of mind that comes with no responses.",
+      "Zero Updates Guarantee: rest assured, your NaaS experience will remain unchanged forever. Say goodbye to annoying updates!",
     ],
   },
   {
@@ -27,28 +24,26 @@ const pricingPlans = [
       "Unlock enhanced features and premium content to supercharge your business.",
     monthlyPrice: 299,
     annualPrice: 199,
-    link: "https://github.com/ansub/syntaxUI",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     features: [
-      "Everything in Basic plan",
-      "Get 25 premium blogs",
-      "Index upto 1000 pages",
-      "Premium support",
-      "Local SEO",
-      "SEO Agent",
+      // "Everything in Basic plan, plus:", TODO: add back
+      "Enhanced Emptiness: Dive deeper into the abyss with our upgraded collection of emptiness. Double the nothing, double the fun!",
+      "VIP Void Lounge: Gain access to our exclusive VIP void lounge, where you can bask in the glory of absolute nothingness with other like-minded individuals.",
+      "Customizable Null Interface: Customize your NaaS experience by choosing from a variety of different shades of nothing. Because why settle for one type of nothing when you can have them all?",
     ],
   },
   {
-    name: "Premium",
+    name: "Enterprise",
     description:
       "Ultimate customization and dedicated support for enterprises.",
     monthlyPrice: 2499,
     annualPrice: 1666,
-    link: "https://github.com/ansub/syntaxUI",
+    link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     features: [
-      "Everything in Professional plan",
-      "Get Unlimited premium blogs",
-      "Add your own AI Model key",
-      "Premium support & training sessions",
+      // "Everything in Professional plan, plus:", TODO: add back
+      "Ultimate Void Access: Unlock the ultimate void access with our enterprise plan. Experience nothingness like never before with unlimited access to our premium void collection.",
+      "Nothing as a Service Concierge: Need assistance with nothing? Our dedicated NaaS concierge is here to provide absolutely no help whatsoever.",
+      "Exclusive Nihilist Networking Events: Join our exclusive networking events where you can network with other NaaS enthusiasts while discussing the meaninglessness of existence. Plus, enjoy complimentary refreshments (which also happen to be nothing).",
     ],
   },
 ];
@@ -59,15 +54,12 @@ const Pricing = () => {
   const Heading = () => (
     <div className="relative z-10 my-12 flex flex-col items-center justify-center gap-4">
       <div className="flex w-full flex-col items-start justify-center space-y-4 md:items-center">
-        <div className="mb-2 inline-block rounded-full bg-red-200 px-2 py-[0.20rem] text-xs font-medium uppercase text-red-500">
-          {" "}
-          Pricing
-        </div>
+        <FancyTitle>Pricing</FancyTitle>
         <p className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
-          Fair pricing, unfair advantage.
+          Pay Less, Get Even Lower.
         </p>
         <p className="text-md max-w-xl text-gray-300 md:text-center">
-          Get started with Acme today and take your business to the next level.
+          Get started with NaaS today and keep your business to the same level.
         </p>
       </div>
       <div className="flex items-center justify-center gap-3">
@@ -138,8 +130,8 @@ const Pricing = () => {
             </motion.button>
           </div>
           {plan.features.map((feature, idx) => (
-            <div key={idx} className="mb-3 flex items-center gap-2">
-              <Check className="text-red-500" size={18} />
+            <div key={idx} className="mb-3 flex items-start gap-2">
+              <Check className="w-20 pt-1 text-red-500" size={18} />
               <span className="text-sm text-gray-600">{feature}</span>
             </div>
           ))}
