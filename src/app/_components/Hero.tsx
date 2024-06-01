@@ -23,11 +23,13 @@ export const Hero = () => {
             </div>
           </h1>
           <h2 className="z-10 text-center text-sm font-bold leading-none tracking-tight sm:text-[2.5rem]">
-            Crafting Digital Excellence for{" "}
-            <span className="bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              Visionary
-            </span>{" "}
-            Enterprises
+            <p className="text-nowrap">
+              Step into the Void with{" "}
+              <span className="bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+                NaaS
+              </span>{" "}
+            </p>
+            <p className="text-nowrap">The Revolutionary Non-Product</p>
           </h2>
         </div>
         <iframe
