@@ -47,24 +47,26 @@ const Testimonials = () => {
   return (
     <div className="z-10 flex flex-col items-center justify-center gap-5 py-12">
       <h1 className="mb-1 max-w-2xl text-center text-2xl font-semibold tracking-tighter text-gray-100 md:text-4xl">
-        Why people love NaaS
+        Why people love{" "}
+        <span className="bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+          NaaS
+        </span>
       </h1>
       <p className="max-w-2xl text-center text-sm font-light text-gray-400 md:text-base">
         Discover the Benefits of Nothing: Real Experiences from Satisfied Users
       </p>
       <cite className="flex flex-col gap-5 text-center italic">
-        <div className="inline-block text-3xl">
+        <div className="inline-block text-3xl leading-10">
           <div className="inline-flex gap-3 text-nowrap">
-            &apos;&apos;Finally, a service that delivers exactly what it
-            promises:{" "}
+            “Finally, a service that delivers exactly what it promises:{" "}
             <div className="relative">
               <p>nothing!</p>
-              <Underline className="absolute -bottom-1 left-0 right-0 w-32 -translate-x-4 rotate-180" />
+              <Underline className="absolute -bottom-1.5 left-0 right-0 w-32 -translate-x-3 rotate-[182deg]" />
             </div>
           </div>
           <p>
             No more hidden fees, no more complexity. Just pure, unadulterated
-            simplicity.&quot;
+            simplicity.”
           </p>
         </div>
         <p>Morgan Stevens, Freelancer</p>
