@@ -71,7 +71,7 @@ const Pricing = () => {
           className={cn(
             `rounded-lg px-4 py-2 text-sm font-medium `,
             billingCycle === "M"
-              ? "relative bg-red-500 text-white "
+              ? "relative bg-blue-400 text-white "
               : " text-gray-300 hover:bg-red-100 hover:text-black",
           )}
         >
@@ -83,7 +83,7 @@ const Pricing = () => {
           className={cn(
             `rounded-lg px-4 py-2 text-sm font-medium `,
             billingCycle === "A"
-              ? "relative bg-red-500 text-white "
+              ? "relative bg-blue-400 text-white "
               : " text-gray-300 hover:bg-red-100 hover:text-black",
           )}
         >
@@ -101,7 +101,7 @@ const Pricing = () => {
           key={index}
           className="w-full rounded-xl border-[1px] border-gray-600 p-6 text-left"
         >
-          <p className="mb-1 mt-0 text-sm font-medium uppercase text-red-500">
+          <p className="text-gamer mb-1 mt-0 text-sm font-medium uppercase">
             {plan.name}
           </p>
           <p className="my-0 mb-6 text-sm text-gray-600">{plan.description}</p>
@@ -127,14 +127,14 @@ const Pricing = () => {
               onClick={() => {
                 window.open(plan.link);
               }}
-              className="mt-8 w-full rounded-lg bg-red-500 py-2 text-sm font-medium text-white hover:bg-red-500/90"
+              className="mt-8 w-full rounded-lg bg-blue-400 py-2 text-sm font-medium text-white hover:bg-blue-500/90"
             >
               Get Started
             </motion.button>
           </div>
           {plan.features.map((feature, idx) => (
             <div key={idx} className="mb-3 flex items-start gap-2">
-              <Check className="w-20 pt-1 text-red-500" size={18} />
+              <Check className="w-20 pt-1 text-pink-400" size={18} />
               <span className="text-sm text-gray-600">{feature}</span>
             </div>
           ))}
@@ -155,7 +155,7 @@ const BackgroundShift = ({ shiftKey }: { shiftKey: string }) => (
   <motion.span
     key={shiftKey}
     layoutId="bg-shift"
-    className="absolute inset-0 -z-10 rounded-lg bg-red-500"
+    className="absolute inset-0 -z-10 rounded-lg bg-blue-400"
     initial={{ opacity: 0, scale: 0.8 }}
     animate={{ opacity: 1, scale: 1 }}
     exit={{ opacity: 0, scale: 0.8 }}

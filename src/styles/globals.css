@@ -45,4 +45,10 @@
   body {
     @apply bg-background text-foreground;
   }
+  .text-gamer {
+    @apply bg-gradient-to-r from-blue-300 via-pink-400 to-blue-400 bg-clip-text text-transparent;
+  }
+  .bg-gamer {
+    @apply bg-gradient-to-r from-blue-600 to-pink-400;
+  }
 }
