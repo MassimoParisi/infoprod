@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import type { FC } from "react";
+import Underline from "~/components/ui/Underline";
 
 interface TestimonalCardProps {
   name: string;
@@ -51,6 +52,23 @@ const Testimonials = () => {
       <p className="max-w-2xl text-center text-sm font-light text-gray-400 md:text-base">
         Discover the Benefits of Nothing: Real Experiences from Satisfied Users
       </p>
+      <cite className="flex flex-col gap-5 text-center italic">
+        <div className="inline-block text-3xl">
+          <div className="inline-flex gap-3 text-nowrap">
+            &apos;&apos;Finally, a service that delivers exactly what it
+            promises:{" "}
+            <div className="relative">
+              <p>nothing!</p>
+              <Underline className="absolute -bottom-1 left-0 right-0 w-32 -translate-x-4 rotate-180" />
+            </div>
+          </div>
+          <p>
+            No more hidden fees, no more complexity. Just pure, unadulterated
+            simplicity.&quot;
+          </p>
+        </div>
+        <p>Morgan Stevens, Freelancer</p>
+      </cite>
       <div className="relative mt-12 flex h-full w-full flex-col items-center justify-center gap-5 md:flex-row">
         <div className="flex flex-col justify-center gap-4">
           <TestimonialCard
