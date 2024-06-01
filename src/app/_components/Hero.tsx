@@ -1,5 +1,5 @@
 "use client";
-import { AnimatedTooltipPreview } from "~/components/ui/AnimatedTooltipPreview";
+import Image from "next/image";
 import { Spotlight } from "~/components/ui/Spotlight";
 import { cn } from "~/lib/utils";
 
@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <div className="relative">
       <Spotlight className="left-0 top-0 md:-top-20 md:left-60" fill="white" />
-      <div className="min-w-screen mx-auto flex flex-col items-center justify-center gap-10 px-4 py-16 sm:w-3/4">
+      <div className="min-w-screen mx-auto flex flex-col items-center justify-center gap-28 px-4 py-16 sm:w-3/4">
         <div className="flex flex-col items-center justify-center gap-4">
           <div
             className={cn(
@@ -35,24 +35,22 @@ export const Hero = () => {
             <p className="text-nowrap">The Revolutionary Non-Product</p>
           </h2>
         </div>
-        <iframe
+        {/* <iframe
           // width="560"
           // height="315"
           className="aspect-video h-[24rem] self-center shadow-2xl shadow-white/20"
           src="https://www.youtube.com/embed/fx2Z5ZD_Rbo?modestbranding=1&showinfo=0&controls=0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
+        /> */}
+        <Image
+          src={"/static/void.webp"}
+          alt="left divider"
+          width={850}
+          height={850}
+          className="animate-void h-[300px] w-[300px] select-none drop-shadow-[0px_0px_40px_rgba(79,4,191,1)]"
         />
       </div>
-      {/* <div className="min-w-screen absolute top-0 z-0 aspect-square">
-        <Image
-          src={"/static/bg-pattern.svg"}
-          alt="hero background pattern"
-          width={800}
-          height={800}
-          className="h-screen w-[1200vw] select-none object-cover opacity-100 invert-[100%]"
-        />
-      </div> */}
     </div>
   );
 };

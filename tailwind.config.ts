@@ -117,6 +117,23 @@ const config = {
             transform: "rotate(26deg) translateY(6px) translateX(10px)",
           },
         },
+        void: {
+          "0%": {
+            transform: "rotate(0deg) scale(1)",
+          },
+          "25%": {
+            transform: "rotate(90deg) scale(1.2)",
+          },
+          "50%": {
+            transform: "rotate(180deg) scale(1)",
+          },
+          "75%": {
+            transform: "rotate(270deg) scale(1.3)",
+          },
+          "100%": {
+            transform: "rotate(360deg) scale(1)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -125,6 +142,7 @@ const config = {
         "skew-scroll": "skew-scroll 20s linear infinite",
         "logo-cloud": "logo-cloud 30s linear infinite",
         dangle: "dangle 1.5s linear infinite",
+        void: "void 15s linear infinite",
       },
     },
   },
