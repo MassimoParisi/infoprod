@@ -20,6 +20,22 @@ export const Product: React.FC = () => {
           </div>
         </div>
         <div className="relative flex h-[35rem] w-screen items-center justify-center overflow-clip">
+          <div className="absolute left-[15%] top-0 flex flex-col items-center gap-8">
+            <p className="text-4xl">we receive:</p>
+            <div className="-rotate-12 text-6xl font-bold text-green-600 [text-shadow:_0px_0px_2rem_rgb(22_163_74_/_100%)]">
+              $$$
+            </div>
+          </div>
+          <div className="absolute right-[15%] top-0 flex flex-col items-center gap-5">
+            <p className="text-4xl">you receive:</p>
+            <ul className="list-disc text-4xl [text-shadow:_0px_0px_2rem_rgb(255_255_255_/_100%)]">
+              <li>Nothing</li>
+              <li>Zero</li>
+              <li>Zilch</li>
+              <li>Nada</li>
+            </ul>
+            (as a service, of course)
+          </div>
           {/* Trade offer image */}
           <Image
             src={"/static/trade-offer.png"}
