@@ -5,6 +5,7 @@ import { Hero } from "./_components/Hero";
 import AnimatedLogoCloud from "./_components/LogoCloud";
 import { OldWay } from "./_components/OldWay";
 import Pricing from "./_components/Pricing";
+import { Product } from "./_components/Product";
 import SkewedInfiniteScroll from "./_components/SkewedInfiniteScroll";
 import Testimonials from "./_components/Testimonial";
 
@@ -14,6 +15,7 @@ export default function HomePage() {
       <div className="flex flex-col items-center justify-center gap-12 ">
         <Hero />
         <OldWay />
+        <Product />
         <AnimatedLogoCloud />
         <Testimonials />
         <Pricing />
